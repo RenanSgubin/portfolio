@@ -61,7 +61,7 @@
 
 .programing-languages-container {
     position: relative;
-    left: 60px;
+    left: 70px;
     width: 100%;
     display: flex;
     align-items: center;
@@ -70,6 +70,7 @@
 }
 
 .programing-languages-content {
+    position: relative;
     width: 100%;
     height: 100%;
     display: flex;
@@ -79,8 +80,6 @@
 }
 
 .skills-title {
-    position: absolute;
-    top: 0%;
     width: 100%;
     height: 7vh;
     display: flex;
@@ -94,42 +93,75 @@
 .main-skills, .secondary-skills {
     position: relative;
     width: 100%;
-    height: 60vh;
+    height: 90vh;
     display: flex;
-    align-items: center;
+    align-items: flex-start;
     justify-content: center;
     flex-direction: column;
-    margin-left: 20px;
 }
 
 .skills-icons {
-    position: absolute;
-    left: 0%;
+    position: relative;
     width: 10%;
-    height: 45vh;
+    height: 100%;
     display: flex;
     align-items: center;
-    justify-content: space-between;
+    justify-content: space-around;
     flex-direction: column;
-    margin-top: 7vh;
 }
 
-.skills-icons i:nth-child(1){
+.skills-icons i {
+    width: 40%;
+    height: 7.4vh;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+}
+
+.skills-icons i:hover {
+    background-color: #8a8a8a;
+}
+
+#primary-skills i:nth-child(1){
     color: #dc6c04;
 }
 
-.skills-icons i:nth-child(2){
+#primary-skills i:nth-child(2){
     color: #4781f5;
 }
 
-.skills-icons i:nth-child(3){
+#primary-skills i:nth-child(3){
     color: #f5f552;
 }
 
-.skills-icons i:nth-child(4){
+#primary-skills i:nth-child(4){
     color: #553c7b;
 }
+
+#primary-skills i:nth-child(5){
+    color: #42b883;
+}
+
+#secondary-skills i:nth-child(1) {
+    color: RGB(136,146,191);
+}
+
+#secondary-skills i:nth-child(2) {
+    color: rgb(51, 107, 149);
+}
+
+#secondary-skills i:nth-child(3) {
+    color: #61dbfb;
+}
+
 .main-skills i, .secondary-skills i {
     transform: scale(2.5);
 }
 
+.language-details {
+    position: absolute;
+    right: 0%;
+    width: 90%;
+    height: 100%;
+    background-color: red;
+}
