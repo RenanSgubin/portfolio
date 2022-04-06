@@ -76,6 +76,14 @@ li {
     z-index: 9999;
 }
 
+.shape-background {
+    position: fixed;
+    left: 0%;
+    top: 0%;
+    width: 70px;
+    height: 100vh;
+}
+
 .social-media-content {
     width: 100%;
     height: 70vh;

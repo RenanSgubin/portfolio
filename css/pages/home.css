@@ -112,56 +112,111 @@
 
 .skills-icons i {
     width: 40%;
-    height: 7.4vh;
+    height: 7.25vh;
     display: flex;
     align-items: center;
     justify-content: center;
+    cursor: pointer;
+    z-index: 9;
+    background-color: #151515;
 }
 
 .skills-icons i:hover {
-    background-color: #8a8a8a;
+    background-color: rgb(226, 226, 226);
 }
 
-#primary-skills i:nth-child(1){
+.secondary-skills-icons {
+    position: relative;
+    width: 10%;
+    height: 100%;
+    display: flex;
+    align-items: center;
+    justify-content: space-around;
+    flex-direction: column;
+}
+
+.secondary-skills-icons i{
+    width: 40%;
+    height: 12vh;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    flex-direction: column;
+    cursor: pointer;
+    background-color: #151515;
+}
+
+.fa-html5 {
     color: #dc6c04;
 }
 
-#primary-skills i:nth-child(2){
+.fa-css3-alt {
     color: #4781f5;
 }
 
-#primary-skills i:nth-child(3){
+.fa-js {
     color: #f5f552;
 }
 
-#primary-skills i:nth-child(4){
+.fa-bootstrap {
     color: #553c7b;
 }
 
-#primary-skills i:nth-child(5){
+.fa-vuejs {
     color: #42b883;
 }
 
-#secondary-skills i:nth-child(1) {
+.fa-php {
     color: RGB(136,146,191);
 }
 
-#secondary-skills i:nth-child(2) {
+.fa-database {
     color: rgb(51, 107, 149);
 }
 
-#secondary-skills i:nth-child(3) {
+.fa-react {
     color: #61dbfb;
 }
 
 .main-skills i, .secondary-skills i {
     transform: scale(2.5);
+    transition: 0.2s all;
 }
 
 .language-details {
     position: absolute;
-    right: 0%;
-    width: 90%;
-    height: 100%;
-    background-color: red;
+    right: -15%;
+    width: 0%;
+    height: 0%;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    flex-direction: column;
+    background-color: rgb(52, 52, 52);
+    transition: 0.3s all;
+    color: #cccccc;
+    margin-right: 70px;
+    z-index: -1;
+}
+
+.language-details i {
+    transform: scale(10);
+}
+
+.language-details span:nth-child(1) {
+    font-family: 'Poppins', sans-serif;
+    font-size: 1.5rem;
+}
+
+.language-description {
+    width: 40%;
+    font-family: 'Poppins', sans-serif;
+}
+
+.language-detail-icon-container {
+    width: 200px;
+    height: 200px;
+    display: flex;
+    align-items: center;
+    justify-content: center;
 }

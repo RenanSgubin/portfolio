@@ -38,6 +38,7 @@
 
     <!--Barra lateral com as redes sociais-->
 
+    <img src="img/shape-bg.jpg" alt="" class="shape-background">
       <div class="social-media-container">
           <div class="social-media-content">
               <span class="social-media-spans"><i class="fa-brands fa-linkedin"></i></span>
@@ -68,31 +69,123 @@
         <div class="programing-languages-content">
             <span class="skills-title">Principais Skills</span>
             <div class="main-skills">
-                
-
                 <div id="primary-skills" class="skills-icons">
-                    <i class="fa-brands fa-html5"></i>
-                    <i class="fa-brands fa-css3-alt"></i>
-                    <i class="fa-brands fa-js"></i>
-                    <i class="fa-brands fa-bootstrap"></i>
-                    <i class="fa-brands fa-vuejs"></i>
+                    <i class="fa-brands fa-html5 language-detail-icon" onclick="showLanguagesDetails(0)" 
+                    onmouseover="hoverLanguageDetailsIcons(0)"></i>
+
+                    <i class="fa-brands fa-css3-alt language-detail-icon" onclick="showLanguagesDetails(1)" 
+                    onmouseover="hoverLanguageDetailsIcons(1)"></i>
+
+                    <i class="fa-brands fa-js language-detail-icon" onclick="showLanguagesDetails(2)" 
+                    onmouseover="hoverLanguageDetailsIcons(2)"></i>
+
+                    <i class="fa-brands fa-bootstrap language-detail-icon" onclick="showLanguagesDetails(3)" 
+                    onmouseover="hoverLanguageDetailsIcons(3)"></i>
+                    
+                    <i class="fa-brands fa-vuejs language-detail-icon" onclick="showLanguagesDetails(4)" 
+                    onmouseover="hoverLanguageDetailsIcons(4)"></i>
+                </div>
+
+                <!--Detalhes de cada linguagem-->
+                <div class="language-details">
+                    <span>HTML</span>
+                    <div class="language-detail-icon-container"><i class="fa-brands fa-html5"></i></div>
+                    <span class="language-description">Linguagem de Marcação criada por Tim Berners-Lee.
+                      Tive o primeiro contato com HTML no inicio do curso técnico. Sempre gostei bastante
+                      de mexer com design interfaces. Tenho 2 anos de experiência com HTML
+                    </span>
                 </div>
 
                 <div class="language-details">
-                    <span>HTML</span>
-                    Lorem Ipsum Dolor Alement Dono
-                </div>
+                  <span>CSS</span>
+                  <div class="language-detail-icon-container"><i class="fa-brands fa-css3-alt"></i></div>
+                  <span class="language-description">Sendo uma folha de estilos em cascatas, o CSS tem o objetivo
+                    de otimizar a aparência de um site. Assim como o HTML, tive o primeiro contato no inicio
+                    do curso técnico, tendo também em média 2 anos de experiência.
+                  </span>
+               </div>
+
+               <div class="language-details">
+                <span>Java Script</span>
+                <div class="language-detail-icon-container"><i class="fa-brands fa-js"></i></div>
+                <span class="language-description">Sendo uma folha de estilos em cascatas, o CSS tem o objetivo
+                  de otimizar a aparência de um site. Assim como o HTML, tive o primeiro contato no inicio
+                  do curso técnico, tendo também em média 2 anos de experiência.
+                </span>
+              </div>
+
+              <div class="language-details">
+                <span>Bootstrap</span>
+                <div class="language-detail-icon-container"><i class="fa-brands fa-bootstrap"></i></div>
+                <span class="language-description">Sendo uma folha de estilos em cascatas, o CSS tem o objetivo
+                  de otimizar a aparência de um site. Assim como o HTML, tive o primeiro contato no inicio
+                  do curso técnico, tendo também em média 2 anos de experiência.
+                </span>
+              </div>
+
+              <div class="language-details">
+                <span>Vue.js</span>
+                <div class="language-detail-icon-container"><i class="fa-brands fa-vuejs"></i></div>
+                <span class="language-description">Sendo uma folha de estilos em cascatas, o CSS tem o objetivo
+                  de otimizar a aparência de um site. Assim como o HTML, tive o primeiro contato no inicio
+                  do curso técnico, tendo também em média 2 anos de experiência.
+                </span>
+              </div>
+
+                <!--Fim Detalhes de cada linguagem-->
+
             </div>
 
+
+            <span class="skills-title">Skills Secundárias</span>
             <div class="secondary-skills" id="secondary-skills-id">
-                <span class="skills-title">Skills Secundárias</span>
 
-                <div id="secondary-skills" class="skills-icons">
-                    <i class="fa-brands fa-php"></i>
-                    <i class="fas fa-database"></i>
-                    <i class="fa-brands fa-react"></i>
+                <div id="secondary-skills" class="secondary-skills-icons">
+                    <i class="fa-brands fa-php language-detail-icon" onclick="showSecondaryLanguagesDetails(5)" onmouseover="hoverLanguageDetailsIcons(5)"></i>
+                    <i class="fas fa-database language-detail-icon" onclick="showSecondaryLanguagesDetails(6)" onmouseover="hoverLanguageDetailsIcons(6)"></i>
+                    <i class="fa-brands fa-react language-detail-icon" onclick="showSecondaryLanguagesDetails(7)" onmouseover="hoverLanguageDetailsIcons(7)"></i>
                 </div>
+
+                <div class="language-details">
+                  <span>PHP</span>
+                  <div class="language-detail-icon-container"><i class="fa-brands fa-php"></i></div>
+                  <span class="language-description">Sendo uma folha de estilos em cascatas, o CSS tem o objetivo
+                    de otimizar a aparência de um site. Assim como o HTML, tive o primeiro contato no inicio
+                    do curso técnico, tendo também em média 2 anos de experiência.
+                  </span>
+                </div>
+
+                <div class="language-details">
+                  <span>MySQL</span>
+                  <div class="language-detail-icon-container"><i class="fas fa-database"></i></div>
+                  <span class="language-description">Sendo uma folha de estilos em cascatas, o CSS tem o objetivo
+                    de otimizar a aparência de um site. Assim como o HTML, tive o primeiro contato no inicio
+                    do curso técnico, tendo também em média 2 anos de experiência.
+                  </span>
+                </div>
+
+                <div class="language-details">
+                  <span>ReactJS</span>
+                  <div class="language-detail-icon-container"><i class="fa-brands fa-react"></i></div>
+                  <span class="language-description">Sendo uma folha de estilos em cascatas, o CSS tem o objetivo
+                    de otimizar a aparência de um site. Assim como o HTML, tive o primeiro contato no inicio
+                    do curso técnico, tendo também em média 2 anos de experiência.
+                  </span>
+                </div>
+
             </div>
+
+
+
+            <!--Habilidades Interpessoais-->
+            <span class="skills-title">Habilidades Interpessoais</span>
+            <div class="secondary-skills" id="secondary-skills-id">
+
+               
+
+            </div>
+
+            <!--Fim habilidades Interpessoais-->
 
         </div>
     </div>
@@ -106,5 +199,7 @@
         document.getElementsByClassName("to-home")[0].style.height = "4vh";
         document.getElementsByClassName("to-home")[0].style.borderBottom = "3px solid #a63d40";
     </script>
+
+    <script src="js/main.js"></script>
 </body>
 </html>
