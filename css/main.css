@@ -2,6 +2,7 @@
 
 
 @import "pages/home.css";
+@import "pages/projects.css";
 
 @import url('https://fonts.googleapis.com/css2?family=Poppins:wght@600&display=swap');
 @import url('https://fonts.googleapis.com/css2?family=Space+Grotesk:wght@700&display=swap');
@@ -38,22 +39,36 @@ li {
 /*HEADER**************************/
 .navbar {
     background-color: rgb(35, 35, 35) !important;
+    z-index: 9999 !important;
 }
 
 .container-fluid {
     width: 80% !important;
-    height: 8vh !important;
+    height: 6vh !important;
     text-align: center !important;
-    font-size: 0.95rem;
+    font-size: 0.90rem;
 }
 
 .navbar a {
     color: #cecece !important;
     font-family: 'Poppins', sans-serif !important;
     margin-left: 40px;
+    transition: 0.1s all;
 }
 
+.navbar a:hover {
+    border-bottom: 3px solid #f82d4f;
+    color: white;
+}
 
+.crystal-content {
+    width: 100%;
+    height: 0.6vh;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    background-image: linear-gradient(45deg, #874da2 0%, #c43a30 100%);
+}
 
 /***************REDES SOCIAIS********************/
 
@@ -100,14 +115,22 @@ li {
     justify-content: center;
     color: #cecece;
     font-size: 1rem;
-    transition: 0.2s all;
     cursor: pointer;
 }
 
 .social-media-spans i {
+    width: 40px;
+    height: 40px;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    padding: 10px;
+    border-radius: 50%;
     transform: scale(1.5);
+    transition: 0.2s all;
 }
 
-.social-media-spans:hover {
-    color: #a63d40;
+.social-media-spans i:hover {
+    color: #f82d4f ;
+    background-color: #000000;
 }

@@ -1,0 +1,37 @@
+
+
+
+*{
+    color: #b9b9b9;
+}
+
+.container-projects {
+    position: relative;
+    left: 70px;
+    width: calc(100% - 70px);
+    height: 100vh;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+}
+
+.content-projects {
+    position: absolute;
+    left: 50%;
+    transform: translateX(-50%);
+    width: 90%;
+    height: 90vh;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    flex-wrap: wrap;
+}
+
+.projects {
+    min-width: 290px;
+    min-height: 400px;
+    background-color: blue;
+    margin-top: 10px;
+    margin-left: 10px;
+    z-index: 9999;
+}
